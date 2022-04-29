@@ -106,6 +106,8 @@ def computer_turn(comp_card):
                 print("Computer's gone over.\n")
                 return computer_hand
         
+        # While loop used to make list add more cards until required number is satisfied. 
+        # Breaks out of specific loop to then return back to previous loop with updated cards.
         elif computer_sum < 17:
             print(f"Computer's hand under 17. comp hand: {computer_hand}, total: {computer_sum}.")
             while computer_sum < 17:
